@@ -41,7 +41,7 @@ export default function index() {
 
   return (
     <div className='w-full h-full flex justify-center items-center'>
-        <div className='w-[550px]  h-[500px] overscroll-auto flex flex-col items-center py-8 px-8 bg-white rounded-lg'>
+        <div className='w-[550px]  h-fit overscroll-auto flex flex-col items-center py-8 px-8 bg-white rounded-lg'>
             <h2 className='text-3xl font-bold'>{!isRegister ? "Log In" : "Register"}</h2>
             <div className='w-full flex justify-start my-2'>
                 <span onClick={()=>setRegister((prev)=> !prev)} className='text-blue-600 text-base font-semibold cursor-pointer'>{!isRegister ? "Register" : "LogIn"}</span>
